@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "VT323", monospace;
+  background: #F2D1B3;
+  -webkit-animation: background 12s infinite;
+          animation: background 12s infinite;
+}
+
+h1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  font-size: 2.5em;
+  color: #FFF;
+  text-shadow: 0px 0px 20px #FF14AB;
+  -webkit-animation: glow 5s ease-in-out infinite;
+          animation: glow 5s ease-in-out infinite;
+}
+
+a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  width: 5px;
+  height: 15px;
+  background: #538EA6;
+  -webkit-animation: swell 1.2s infinite;
+          animation: swell 1.2s infinite;
+}
+
+ul li:nth-of-type(1), ul li:nth-of-type(11) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+ul li:nth-of-type(2), ul li:nth-of-type(10) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+ul li:nth-of-type(3), ul li:nth-of-type(9) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+ul li:nth-of-type(4), ul li:nth-of-type(8) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+ul li:nth-of-type(5), ul li:nth-of-type(7) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+ul li:nth-of-type(6) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+@-webkit-keyframes swell {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(6);
+            transform: scaleY(6);
+    margin: 10px;
+    background: #98F4A1;
+  }
+}
+
+@keyframes swell {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(6);
+            transform: scaleY(6);
+    margin: 10px;
+    background: #98F4A1;
+  }
+}
+
+@-webkit-keyframes background {
+  50% {
+    background: #F28C8C;
+  }
+}
+
+@keyframes background {
+  50% {
+    background: #F28C8C;
+  }
+}
+
+@-webkit-keyframes glow {
+  0% {
+    text-shadow: 0px 0px 20px #538EA6, 0px 0px 30px #538EA6;
+  }
+  50% {
+    text-shadow: 0px 0px 10px #538EA6, 0px 0px 40px #538EA6;
+  }
+  100% {
+    text-shadow: 0px 0px 20px #538EA6, 0px 0px 30px #538EA6;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0px 0px 20px #538EA6, 0px 0px 30px #538EA6;
+  }
+  50% {
+    text-shadow: 0px 0px 10px #538EA6, 0px 0px 40px #538EA6;
+  }
+  100% {
+    text-shadow: 0px 0px 20px #538EA6, 0px 0px 30px #538EA6;
+  }
+}
